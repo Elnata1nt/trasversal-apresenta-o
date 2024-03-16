@@ -10,15 +10,18 @@
     <div class="container" style="display: flex; flex-direction: column;">
         <h1>Coleta de Dados</h1>
         <form id="coletaDadosForm">
-            <label for="nomeOrganizacao">Nome pessoal:</label>
-            <input type="text" id="nomeOrganizacao" name="nomeOrganizacao">
+            <label for="nomePessoal">Nome pessoal:</label>
+            <input type="text" id="nomePessoal" name="nomePessoal">
             
-            <label for="enderecoOrganizacao">Placa:</label>
-            <input type="text" id="enderecoOrganizacao" name="enderecoOrganizacao">
+            <label for="placaVeiculo">Placa:</label>
+            <input type="text" id="placaVeiculo" name="placaVeiculo">
 
             <label for="modeloCarro">Carro:</label>
             <input type="text" id="modeloCarro" name="modeloCarro">
-            
+
+            <label for="kmPercorrido">Km Percorrido:</label>
+            <input type="text" id="kmPercorrido" name="kmPercorrido">
+
             <label for="dataPreenchimento">Data de Preenchimento:</label>
             <input type="date" id="dataPreenchimento" name="dataPreenchimento">
         </form>
@@ -32,30 +35,51 @@
             <tr>
                 <td>TransporteMedios</td>
                 <td>
-                    <label><input type="checkbox" name="TransporteLeves" value="TransporteLeves"> Transportes leves</label><br>
-                    <label><input type="checkbox" name="TransporteMedios" value="TransporteMedios"> Transporte Medios</label><br>
-                    <label><input type="checkbox" name="TransporteSemiPesados" value="TransporteSemiPesados"> Transportes semi-pesados</label><br>
-                    <label><input type="checkbox" name="TransportePesados" value="TransportePesados"> Transportes Pesados</label><br>
-                    <label><input type="checkbox" name="TransporteNavios" value="TransporteNavios"> Navios </label><br>
+                    <label><input type="checkbox" name="TransporteLeves" value="TransporteLeves"> Transportes leves - Motos</label><br>
+                    <label><input type="checkbox" name="TransporteMedios" value="TransporteMedios"> Transporte Medios - Carros</label><br>
+                    <label><input type="checkbox" name="TransporteSemiPesados" value="TransporteSemiPesados"> Transportes semi-pesados - Picapes</label><br>
+                    <label><input type="checkbox" name="TransportePesados" value="TransportePesados"> Transportes Pesados - Onibus</label><br>
+                    <label><input type="checkbox" name="TransportePesados" value="transportePesados"> Transportes Pesados - caminhão</label><br>
                 </td>
             </tr>
         </table>
         <br>
-        <button type="submit" style="align-self: flex-start;">Adicionar Dados</button>
-    </div>
-    
-        <h2>Análise e Processamento dos Dados</h2>
-        <table id="analiseTable">
-            <tr>
-                <th>ID</th>
-                <th>Dados Coletados ID</th>
-                <th>Detalhes da Análise</th>
-            </tr>
-            <!-- Os dados da tabela 'AnaliseProcessamento' seriam preenchidos aqui -->
-        </table>
+        <button type="button" id="calcularBtn">Adicionar Dados</button>
+        <div id="analiseTableContainer">
+            <h2>Análise e Processamento dos Dados</h2>
 
-        <!-- Continuar com as demais tabelas de acordo com a estrutura do banco de dados fornecida -->
-    </div>
+            <table id="analiseTable">
+                <tr>
+                    <th>Nome</th>
+                    <th>Veículo</th>
+                    <th>Distância (km)</th>
+                    <th>Consumo (L/tmaterial)</th>
+                    <th>Emissão de CO2</th> 
+                    <th>Data de Preenchimento</th>
+                </tr>
+
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+
+            </table>
+        </div>
+        </div>
+                    
 </body>
 <script src="/js/teste.js" defer></script>
 </html>
